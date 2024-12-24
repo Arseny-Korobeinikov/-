@@ -264,7 +264,7 @@ int main() {
 	res_f4.time = time_taken;
 
 	start = chrono::high_resolution_clock::now();
-	Result res_f5 = algorithm_for_searching(2.7, 7.5, f_5, 2, max_count_operation, error_of_arg); // not true prog: 7.06785		true: 5.19978
+	Result res_f5 = algorithm_for_searching(2.7, 7.5, f_5, 5, max_count_operation, error_of_arg); // not true prog: 7.06785		true: 5.19978
 	end = chrono::high_resolution_clock::now();
 	time_taken =
 		chrono::duration_cast<chrono::nanoseconds>(end - start).count();
@@ -272,7 +272,7 @@ int main() {
 	res_f5.time = time_taken;
 
 	start = chrono::high_resolution_clock::now();
-	Result res_f6 = algorithm_for_searching(0.0, 4.0, f_6, 5, max_count_operation, error_of_arg); // not prog: 2.22485		true: 0.222485   !!
+	Result res_f6 = algorithm_for_searching(0.0, 4.0, f_6, 1.8, max_count_operation, error_of_arg); // not prog: 2.22485		true: 0.222485   !!
 	end = chrono::high_resolution_clock::now();
 	time_taken =
 		chrono::duration_cast<chrono::nanoseconds>(end - start).count();
