@@ -158,7 +158,7 @@ int main() {
 	res_f2.time = time_taken;
 
 	start = chrono::high_resolution_clock::now();
-	Result res_f3 = algorithm_for_searching(0.0, 1.2, f_3, r, max_count_operation, error_of_arg);
+	Result res_f3 = algorithm_for_searching(0.0, 1.2, f_3, 2, max_count_operation, error_of_arg);
 	end = chrono::high_resolution_clock::now();
 	time_taken =
 		chrono::duration_cast<chrono::nanoseconds>(end - start).count();
